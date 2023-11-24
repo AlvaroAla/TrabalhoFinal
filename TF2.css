@@ -1,0 +1,153 @@
+.navbar {
+    width: 100%;
+}
+#dtnasc {
+    min-width: 200px;
+}
+footer p {
+    font-weight: bolder;
+}
+#fotoPerfil {
+    border-radius: 100px;
+}
+#botaoPesquisar {
+    min-width: 150px;
+}
+#itensCadastrados {
+    height: 310px;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;
+    /*altura inferior*/
+    font-family: system-ui;
+    width: 100%;    
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: black;
+}
+#item, #itensCadastrados, #perfil, #sobre {
+    background-color: cadetblue;
+}
+.col-3, body, .dicas, #abaixoCalculadora, .list-group {
+    background-color: lightblue;
+}
+.bg-custom, header, footer {
+    background-color: teal;
+}
+footer a:link, footer a:visited, h7 a:link, h7 a:visited, p a:link, p a:visited {
+    color: black;
+}
+#formCalculadora, #formLogin, #formEditarVeiculo{
+    background-color: cadetblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px darkslategray;
+    border: 2px solid teal;
+}
+p {
+    font-size: 17px;
+}
+#dicaGeral {
+    color: darkmagenta;
+}
+#dicaCombustivel {
+    color: mediumvioletred;
+}
+#dicaEnergia {
+    color: navy;
+}
+#dicaGeral p, #dicaCombustivel p, #dicaEnergia p, article p, .form-check {
+    text-align: justify;
+}
+.form-check p, #pArticleSobre {
+    text-align: center;
+}
+#formCalculadora {
+    position: relative;
+    top: 8%;
+}
+#formLogin{
+    position: relative;
+    top: 77.5%;
+}
+#formLogin input, #formCalculadora input, #formCadastro input, #formEditarVeiculo input, #formPerfil input, option {
+    background-color: lightblue;
+}
+#formCalculadora input[type="radio"]:checked, #formPerfil input[type="radio"]:checked, #formEditarVeiculo input[type="radio"]:checked {
+    background-color: midnightblue;
+}
+#tipoCombustivelPerfilDiv select, #tipoCombustivelEdicaoDiv select, #alterarFoto, #calcularItensCadastrados input {
+    background-color: lightblue;
+}
+#alertas{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+#iconeLogin, #imagemLogin{ /*jogando elementos para a direita*/
+    position: absolute;
+    right: 0;
+}
+#pesquisa{
+    margin-left: 100px;
+}
+.list-group, .list-group-horizontal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-error{
+    border: 1px solid red;
+}
+/**/
+@media (max-width: 1000px){
+    footer{
+        height: 5%;
+    }
+    #date{
+        margin-left: 9px;
+    }
+    #itensCadastrados {
+        height: 370px;
+    }
+    #footerLogin{
+        height: 50px;
+    }
+    #footerPerfil{
+        height: 3%;
+    }
+    #footerSobre{
+        height: 10%;
+    }
+}
+@media (max-width: 535px){
+    footer{
+        height: 5.5%;
+    }
+    #formCalculadora {
+        position: relative;
+        top: 8%;
+    }
+    #itensCadastrados {
+        height: 390px;
+    }
+    #footerLogin{
+        height: 75px;
+    }
+    #formLogin {
+        position: relative;
+        top: 50%;
+    }
+    #footerListaV, #footerListaU, #footerEdicao{
+        height: 50px;
+    }
+}
